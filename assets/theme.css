@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FEF4E8; /* Change this color if needed */
+  color: #46596E; /* Change this color if needed */
+}
+
+.main-nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #121212;
+  position: relative;
+}
+
+.nav-link:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 2px;
+  background: #121212;
+  transition: all 0.3s ease-out;
+}
+
+.nav-link:hover::before {
+  left: 0;
+  right: 0;
+}
